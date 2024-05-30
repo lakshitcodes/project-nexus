@@ -111,5 +111,5 @@ app.get("/logout", (req, res) => {
 });
 
 app.listen(port, () => {
-  console.log(`Server Running at port : ${port}`);
+  console.log(`Website live at : http://localhost:${port}/`);
 });
