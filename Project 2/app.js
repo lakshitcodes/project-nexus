@@ -74,7 +74,7 @@ app.post(
   }),
   async (req, res) => {
     req.flash("success", "You are logged in.");
-    res.redirect("/");
+    res.render("pages/userPage.ejs");
   }
 );
 
@@ -92,12 +92,22 @@ app.post("/signup", async (req, res) => {
         return next(err);
       }
       req.flash("success", "User registered successfully.");
-      res.redirect("/");
+      res.redirect("pages/userPage.ejs");
     });
   } catch (e) {
     req.flash("error", e);
     res.redirect("/signup");
   }
+});
+
+app.get("/logout", (req, res) => {
+  req.logout((err) => {
+    if (err) {
+      next(err);
+    }
+    req.flash("success", "Logged Out Successfully!");
+    res.redirect("/");
+  });
 });
 
 app.listen(port, () => {
