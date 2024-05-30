@@ -1,7 +1,9 @@
 ## Project 2
 
-The first project in this internship is simply a login and signup page .
-It is frontend only.
+The second project in this internship is a login and signup page with authentication .
+It uses MONGODB as database.
+Make sure that mongod instance in running in the background.
+This is a fully functional login and signup page.
 
 To access it on your computer ,download all the files from this gitHub repository folder and then run the following commands in sequence.
 
