@@ -1,0 +1,48 @@
+<%- layout ("/layouts/boilerplate.ejs")%>
+<div class="col-8 offset-2 mt-5 mb-5">
+  <h1>Feedback</h1>
+  <form
+    action="/leave-feedback"
+    method="POST"
+    novalidate
+    class="needs-validation"
+  >
+    <div class="mb-3">
+      <label for="name" class="form-label">Enter your name</label>
+      <input
+        type="text"
+        class="form-control"
+        placeholder="Name"
+        name="feedback[name]"
+        required
+      />
+      <div class="valid-feedback">Looks good!</div>
+      <div class="invalid-feedback">Please enter your name.</div>
+    </div>
+    <div class="mb-3">
+      <label for="email" class="form-label">Enter your email</label>
+      <input
+        type="email"
+        class="form-control"
+        placeholder="Email"
+        name="feedback[email]"
+        required
+      />
+      <div class="valid-feedback">Looks good!</div>
+      <div class="invalid-feedback">Please enter email</div>
+    </div>
+    <div class="mb-3">
+      <label for="feedback" class="form-label">Write down your message.</label>
+      <textarea
+        name="feedback[message]"
+        class="form-control"
+        placeholder="I want to convey that..."
+        rows="5"
+        required
+      ></textarea>
+      <div class="valid-feedback">Thank you for the feedback.</div>
+      <div class="invalid-feedback">Please enter your message.</div>
+    </div>
+    <button class="btn btn-dark">Submit</button>
+  </form>
+</div>

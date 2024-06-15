@@ -1,0 +1,101 @@
+<%- layout ("/layouts/boilerplate.ejs")%>
+
+<main>
+  <section class="hero">
+    <h1>Welcome to Techy Software Company</h1>
+    <p>Creating innovative software solutions.</p>
+  </section>
+
+  <section class="portfolio">
+    <h2>Our Products</h2>
+    <div class="product-gallery">
+      <img src="images/nexus-product1.jpg" alt="Nexus Product 1" />
+      <img src="images/nexus-product2.jpg" alt="Nexus Product 2" />
+    </div>
+  </section>
+
+  <section class="services">
+    <h2>Our Services</h2>
+    <div class="service-list">
+      <div class="service-item">
+        <h3>Web Development</h3>
+        <p>We build responsive and modern web applications.</p>
+      </div>
+      <div class="service-item">
+        <h3>AI Solutions</h3>
+        <p>Integrating artificial intelligence to optimize your business.</p>
+      </div>
+      <div class="service-item">
+        <h3>Mobile Apps</h3>
+        <p>Creating user-friendly mobile applications for various platforms.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="testimonials">
+    <h2>Testimonials</h2>
+    <div class="testimonial-list">
+      <div class="testimonial-item">
+        <p>
+          "Techy Software Company transformed our business with their innovative
+          solutions!"
+        </p>
+        <p><strong>- John Doe, CEO of ABC Corp</strong></p>
+      </div>
+      <div class="testimonial-item">
+        <p>"The team is highly skilled and professional. Highly recommend!"</p>
+        <p><strong>- Jane Smith, CTO of XYZ Ltd</strong></p>
+      </div>
+    </div>
+  </section>
+
+  <section class="info">
+    <h2>Contact Us</h2>
+    <form
+      action="/leave-feedback"
+      method="POST"
+      novalidate
+      class="needs-validation"
+    >
+      <div class="mb-3">
+        <label for="name" class="form-label">Enter your name</label>
+        <input
+          type="text"
+          class="form-control"
+          placeholder="Name"
+          name="feedback[name]"
+          required
+        />
+        <div class="valid-feedback">Looks good!</div>
+        <div class="invalid-feedback">Please enter your name.</div>
+      </div>
+      <div class="mb-3">
+        <label for="email" class="form-label">Enter your email</label>
+        <input
+          type="email"
+          class="form-control"
+          placeholder="Email"
+          name="feedback[email]"
+          required
+        />
+        <div class="valid-feedback">Looks good!</div>
+        <div class="invalid-feedback">Please enter email</div>
+      </div>
+      <div class="mb-3">
+        <label for="feedback" class="form-label"
+          >Write down your message.</label
+        >
+        <textarea
+          name="feedback[message]"
+          class="form-control"
+          placeholder="I want to convey that..."
+          rows="5"
+          required
+        ></textarea>
+        <div class="valid-feedback">Thank you for the feedback.</div>
+        <div class="invalid-feedback">Please enter your message.</div>
+      </div>
+      <button class="btn btn-dark">Submit</button>
+    </form>
+  </section>
+</main>

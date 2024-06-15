@@ -1,0 +1,143 @@
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.container {
+  flex: 1;
+  width: 100vw;
+}
+
+/* Footer */
+footer .f-info {
+  text-align: center;
+  display: flex;
+  height: 8rem;
+  background-color: #ebebeb;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: space-evenly;
+}
+
+footer .f-info-links,
+footer .f-info-socials,
+footer .f-info-brand {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer .f-info-socials i {
+  font-size: 1.2rem;
+  margin-right: 1rem;
+}
+
+footer .f-info-links a {
+  text-decoration: none;
+  color: #222222;
+}
+
+footer .f-info-links a:hover {
+  text-decoration: underline;
+}
+
+.fa-brands {
+  color: black !important;
+}
+
+/* Hero Section */
+.hero {
+  background: linear-gradient(to right, #4facfe, #00f2fe);
+  color: white;
+  padding: 5rem 0;
+  text-align: center;
+}
+
+/* Section Padding and Text Alignment */
+.portfolio,
+.services,
+.testimonials,
+.info,
+.about,
+.products,
+.contact {
+  padding: 2rem;
+  text-align: center;
+}
+
+/* Portfolio Section */
+.portfolio .product-gallery img {
+  width: 45%;
+  margin: 1rem;
+}
+
+/* Services Section */
+.services .service-list {
+  display: flex;
+  justify-content: space-around;
+  padding: 1rem;
+}
+
+.services .service-item {
+  border: 1px solid #ddd;
+  padding: 1rem;
+  width: 30%;
+}
+
+/* Testimonials Section */
+.testimonials .testimonial-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.testimonials .testimonial-item {
+  border: 1px solid #ddd;
+  padding: 1rem;
+  margin: 1rem;
+  width: 50%;
+}
+
+/* Info Form */
+.info form {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.info form label {
+  margin-top: 1rem;
+}
+
+.info form input,
+.info form textarea {
+  width: 100%;
+  padding: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.info form button {
+  margin-top: 1rem;
+  padding: 0.5rem 2rem;
+  background-color: #333;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+/* Product Section */
+.product-list {
+  display: flex;
+  justify-content: space-around;
+  padding: 1rem;
+}
+
+.product-item {
+  border: 1px solid #ddd;
+  padding: 1rem;
+  width: 45%;
+}
